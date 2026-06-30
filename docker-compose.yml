@@ -1,0 +1,22 @@
+# ⚡ TRINITY MODS · TRINITY AUTOFILTER — github.com/Trinity-Mods/Auto-Filter-Bot
+# Crafted by Trinity Mods (@trinityXmods).
+version: "3.8"
+services:
+  trinity-autofilter:
+    build: .
+    restart: unless-stopped
+    environment:
+      BOT_TOKEN: $BOT_TOKEN
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      CHANNELS: $CHANNELS
+      ADMINS: $ADMINS
+      LOG_CHANNEL: $LOG_CHANNEL
+      DATABASE_NAME: $DATABASE_NAME
+      DATABASE_URI: $DATABASE_URI
+      BIN_CHANNEL: $BIN_CHANNEL
+      TMSL: $TMSL
+      PORT: $PORT
+    ports:
+      - "8080:8080"
+# ⚡ Trinity Mods (@trinityXmods) · license-locked credit.
