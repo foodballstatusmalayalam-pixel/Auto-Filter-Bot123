@@ -1,0 +1,30 @@
+{
+    "name": "Trinity AutoFilter",
+    "description": "A powerful, original Telegram auto-filter bot with on-the-fly file streaming, premium economy, multi-client load balancing and search analytics — by Trinity Mods (@trinityXmods).",
+    "stack": "container",
+    "keywords": [
+        "telegram", "auto-filter", "filter", "trinity", "streaming",
+        "pyrofork", "media", "search", "index", "inline", "file-store"
+    ],
+    "website": "https://github.com/Trinity-Mods/Auto-Filter-Bot",
+    "repository": "https://github.com/Trinity-Mods/Auto-Filter-Bot",
+    "env": {
+        "BOT_TOKEN": { "description": "Your bot token from @BotFather.", "required": true },
+        "API_ID": { "description": "From https://my.telegram.org/apps", "required": true },
+        "API_HASH": { "description": "From https://my.telegram.org/apps", "required": true },
+        "ADMINS": { "description": "Telegram user id(s) of admin(s). Space-separated.", "required": true },
+        "CHANNELS": { "description": "Channel(s) to auto-index. Space-separated.", "required": false },
+        "DATABASE_URI": { "description": "Your MongoDB URI (Atlas).", "required": true },
+        "DATABASE_NAME": { "description": "MongoDB database name.", "value": "TrinityFilter", "required": false },
+        "COLLECTION_NAME": { "description": "Files collection name (unique per bot).", "value": "Trinity_files", "required": false },
+        "LOG_CHANNEL": { "description": "Log channel id (-100...). Bot must be admin.", "required": true },
+        "BIN_CHANNEL": { "description": "Channel id where streamed files are stored.", "required": false },
+        "TMSL": { "description": "Trinity Mods Streaming Link — your public domain WITHOUT https:// and / (e.g. my-app.koyeb.app).", "required": false },
+        "SUPPORT_CHAT": { "description": "Support bot/group username WITHOUT @.", "required": false },
+        "CHNL_LNK": { "description": "Your updates channel link.", "required": false },
+        "GRP_LNK": { "description": "Your main group link.", "required": false }
+    },
+    "addons": [],
+    "buildpacks": [{ "url": "heroku/python" }],
+    "formation": { "worker": { "quantity": 1, "size": "eco" } }
+}
