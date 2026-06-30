@@ -1,0 +1,53 @@
+<!-- ═══════════════════════════════════════════════════════════════════════════
+   ⚡ TRINITY MODS · TRINITY AUTOFILTER — in-browser watch / listen player.
+   Developed & maintained by Trinity Mods (@trinityXmods)
+   Source : github.com/Trinity-Mods/Auto-Filter-Bot · 🚫 credit license-locked
+══════════════════════════════════════════════════════════════════════════ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ file_name }} · Trinity AutoFilter</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <style>
+    :root { --bg:#0b0d12; --card:#141822; --accent:#7c5cff; --accent2:#19c2ff; --text:#e8ecf5; --muted:#8b93a7; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Segoe UI',system-ui,Roboto,Arial,sans-serif; background:radial-gradient(1000px 500px at 50% -10%,#1b2030,var(--bg)); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:18px; }
+    .wrap { width:100%; max-width:920px; }
+    .title { font-size:16px; font-weight:600; margin-bottom:12px; word-break:break-word; }
+    .title small { color:var(--muted); font-weight:400; }
+    .player { background:#000; border-radius:14px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.5); }
+    .bar { display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; }
+    a.btn { text-decoration:none; color:#fff; background:linear-gradient(90deg,var(--accent),var(--accent2)); padding:10px 18px; border-radius:10px; font-weight:600; font-size:14px; }
+    a.ghost { background:transparent; border:1px solid rgba(255,255,255,.14); }
+    footer { margin-top:18px; font-size:12px; color:var(--muted); text-align:center; }
+    footer a { color:var(--accent2); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">{{ file_name }} <small>· {{ file_size }}</small></div>
+    <div class="player">
+      {% if media_kind == 'audio' %}
+      <audio id="player" controls preload="metadata" style="width:100%">
+        <source src="{{ file_url }}" />
+      </audio>
+      {% else %}
+      <video id="player" controls crossorigin playsinline preload="metadata" style="width:100%">
+        <source src="{{ file_url }}" type="video/mp4" />
+      </video>
+      {% endif %}
+    </div>
+    <div class="bar">
+      <a class="btn" href="{{ file_url }}" download>⬇ Download</a>
+      <a class="btn ghost" href="https://t.me/trinityXmods" target="_blank">⚡ Trinity Mods</a>
+    </div>
+    <footer>Streamed by Trinity AutoFilter · © Trinity Mods (@trinityXmods) ·
+      <a href="https://github.com/Trinity-Mods/Auto-Filter-Bot" target="_blank">source</a></footer>
+  </div>
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>try { new Plyr('#player'); } catch (e) {}</script>
+</body>
+</html>
+<!-- ⚡ Crafted by Trinity Mods (@trinityXmods). Keep the credit → github.com/Trinity-Mods · license-locked -->
