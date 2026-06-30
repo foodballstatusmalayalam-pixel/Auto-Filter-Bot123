@@ -1,0 +1,9 @@
+# ⚡ TRINITY MODS · TRINITY AUTOFILTER — github.com/Trinity-Mods/Auto-Filter-Bot
+# Normalize line endings to LF (the bot runs on Linux containers).
+* text=auto eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.html text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
