@@ -250,19 +250,26 @@ python3 launcher.py
 <p align="center">
   <a href="https://t.me/trinityXmods">
     <img src="https://img.shields.io/badge/Trinity_Mods-1e3a8a?style=for-the-badge&logo=telegram&logoColor=white" />
-    <img src="https://img.shields.io/badge/Creator_&_Maintainer-4f46e5?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Creator_&_Lead-4f46e5?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/github.com/Trinity--Mods-6b21a8?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/Trinity-Mods">
-    <img src="https://img.shields.io/badge/github.com/Trinity--Mods-6b21a8?style=for-the-badge&logo=github&logoColor=white" />
-    <img src="https://img.shields.io/badge/Open_Source-9333ea?style=for-the-badge" />
+  <a href="https://t.me/the_universal_being">
+    <img src="https://img.shields.io/badge/The_Godfather-1e3a8a?style=for-the-badge&logo=telegram&logoColor=white" />
+    <img src="https://img.shields.io/badge/Co--Author-4f46e5?style=for-the-badge" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://t.me/lovingcosmos">
+    <img src="https://img.shields.io/badge/Shrey-6b21a8?style=for-the-badge&logo=telegram&logoColor=white" />
+    <img src="https://img.shields.io/badge/Co--Author-9333ea?style=for-the-badge" />
   </a>
 </p>
 
-> 🛡️ Built **exclusively by Trinity Mods**. Credits are **license-locked** (`brand.py`) — one
-> un-removable **⚡ Powered by Trinity Mods** button, and every source file carries the Trinity
-> credit at its top, middle and bottom.
+> 🛡️ Crafted by **Trinity Mods**, with co-authors **The Godfather** &amp; **Shrey**. Credits are
+> **license-locked** (`brand.py`) — one un-removable **⚡ Powered by Trinity Mods** button, and
+> every source file carries the Trinity credit at its top, middle and bottom.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
