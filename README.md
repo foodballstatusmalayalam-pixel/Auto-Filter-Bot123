@@ -286,7 +286,7 @@ python3 launcher.py
   <a href="https://t.me/trinityXmods"><img src="https://img.shields.io/badge/Updates-@trinityXmods-0088cc?style=for-the-badge&logo=telegram&logoColor=white" /></a>
 </p>
 
-<p align="center">🤝 <b>Custom bots / partnerships:</b> DM <a href="https://t.me/trinityXmods">@trinityXmods</a></p>
+<p align="center">🤝 <b>Custom bots / partnerships:</b> DM <a href="https://t.me/the_universal_being">@the_universal_being</a></p>
 
 <!-- ════════════════════════ OUTRO ════════════════════════ -->
 <p align="center">
