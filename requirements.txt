@@ -1,0 +1,37 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+#  ⚡ TRINITY MODS · TRINITY AUTOFILTER — dependency pins.
+#  The MongoDB stack (umongo / marshmallow / pymongo / motor) is pinned because
+#  vault/media_index.py depends on these exact versions. Do not bump blindly.
+#  Crafted by Trinity Mods (@trinityXmods) · github.com/Trinity-Mods/Auto-Filter-Bot
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# --- Telegram / core ---
+pyrofork==2.3.65
+tgcrypto
+pyromod==1.5
+
+# --- Database (PINNED for umongo compatibility) ---
+umongo
+pymongo[srv]==3.12.3
+motor==2.5.1
+marshmallow==3.14.1
+dnspython
+
+# --- Web / streaming server ---
+aiohttp
+aiofiles
+jinja2
+
+# --- Utilities ---
+requests
+bs4
+pytz
+apscheduler
+shortzy==0.0.8
+pyshorteners
+telegraph
+rapidfuzz
+
+# --- IMDb / extras ---
+git+https://github.com/Joelkb/cinemagoer
+googletrans==4.0.0-rc1
