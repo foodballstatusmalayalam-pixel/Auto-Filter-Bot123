@@ -275,7 +275,7 @@ python3 launcher.py
 
 <!-- ════════════════════════ SUPPORT ════════════════════════ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,20,12&height=58&section=header&text=%F0%9F%8C%9F%20Support%20%26%20Feedback&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=58" width="66%"/>
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,20,12&height=58&section=header&text=%F0%9F%8C%9F%20Support%20and%20Feedback&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=58" width="66%"/>
 </p>
 
 <p align="center">If this project helps you — <b>⭐ star it, 📢 share it, 🧑‍💻 contribute.</b></p>
