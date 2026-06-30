@@ -1,0 +1,38 @@
+<!-- ═══════════════════════════════════════════════════════════════════════════
+   ⚡ TRINITY MODS · TRINITY AUTOFILTER — generic file download page.
+   Developed & maintained by Trinity Mods (@trinityXmods)
+   Source : github.com/Trinity-Mods/Auto-Filter-Bot · 🚫 credit license-locked
+══════════════════════════════════════════════════════════════════════════ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ file_name }} · Trinity AutoFilter</title>
+  <style>
+    :root { --bg:#0b0d12; --card:#141822; --accent:#7c5cff; --accent2:#19c2ff; --text:#e8ecf5; --muted:#8b93a7; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Segoe UI',system-ui,Roboto,Arial,sans-serif; background:radial-gradient(1000px 500px at 50% -10%,#1b2030,var(--bg)); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+    .card { background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:20px; padding:40px 34px; max-width:520px; width:100%; text-align:center; box-shadow:0 30px 80px rgba(0,0,0,.45); }
+    .ico { font-size:48px; }
+    h1 { font-size:18px; margin:14px 0 4px; word-break:break-word; }
+    .size { color:var(--muted); font-size:13px; margin-bottom:22px; }
+    a.btn { display:inline-block; text-decoration:none; color:#fff; background:linear-gradient(90deg,var(--accent),var(--accent2)); padding:13px 26px; border-radius:12px; font-weight:600; }
+    a.ghost { background:transparent; border:1px solid rgba(255,255,255,.14); margin-left:8px; }
+    footer { margin-top:24px; font-size:12px; color:var(--muted); }
+    footer a { color:var(--accent2); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="ico">📁</div>
+    <h1>{{ file_name }}</h1>
+    <div class="size">{{ file_size }}</div>
+    <a class="btn" href="{{ file_url }}" download>⬇ Download now</a>
+    <a class="btn ghost" href="https://t.me/trinityXmods" target="_blank">⚡ Trinity Mods</a>
+    <footer>Served by Trinity AutoFilter · © Trinity Mods (@trinityXmods) ·
+      <a href="https://github.com/Trinity-Mods/Auto-Filter-Bot" target="_blank">source</a></footer>
+  </div>
+</body>
+</html>
+<!-- ⚡ Crafted by Trinity Mods (@trinityXmods). Keep the credit → github.com/Trinity-Mods · license-locked -->
