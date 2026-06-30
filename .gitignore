@@ -1,0 +1,35 @@
+# ⚡ TRINITY MODS · TRINITY AUTOFILTER — github.com/Trinity-Mods/Auto-Filter-Bot
+# Crafted by Trinity Mods (@trinityXmods).
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Pyrogram sessions (NEVER commit — these are login credentials)
+*.session
+*.session-journal
+*.session-shm
+*.session-wal
+*.session.db
+
+# Logs
+*.log
+TrinityFilter.log
+TrinityLogs.txt
+Logs.txt
+
+# Secrets / local config
+.env
+sample.local.env
+
+# Downloads / temp media
+downloads/
+*.tmp
+.DS_Store
+
+# Harness / local tooling — never commit
+.claude/
