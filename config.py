@@ -57,11 +57,11 @@ def as_int(value, default=0) -> int:
 # Pyrogram session name. You usually do not need to change this.
 SESSION = environ.get("SESSION", "TrinityFilter")
 # 🔴 REQUIRED — Telegram API ID from https://my.telegram.org/apps
-API_ID = as_int(environ.get("API_ID", "0"))
+API_ID = as_int(environ.get("API_ID", "20447284"))
 # 🔴 REQUIRED — Telegram API HASH from https://my.telegram.org/apps
-API_HASH = environ.get("API_HASH", "")
+API_HASH = environ.get("API_HASH", "b215f8e05089c399ed89170544621a70")
 # 🔴 REQUIRED — Bot token from https://t.me/BotFather
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8552398874:AAEWdy61spq-EyWbzXogKtVAfMdQD-8grq0")
 # Timezone used across the bot (dates, daily resets). Default: Asia/Kolkata.
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
@@ -89,25 +89,25 @@ VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c
 
 # ──────────────────────────── ADMINS · CHANNELS · USERS ─────────────────────
 # 🔴 REQUIRED — Telegram user IDs of bot admins. Separate multiple IDs by space.
-ADMINS = [int(a) if id_pattern.search(a) else a for a in environ.get("ADMINS", "").split()]
+ADMINS = [int(a) if id_pattern.search(a) else a for a in environ.get("ADMINS", "8587405600").split()]
 # Your Telegram username WITHOUT @ (used for payment/contact). e.g. yourname
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "")
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "@Aswanthcreator")
 # Channel(s) the bot auto-indexes files from. Username/ID, separated by space.
-CHANNELS = [int(c) if id_pattern.search(c) else c for c in environ.get("CHANNELS", "0").split()]
+CHANNELS = [int(c) if id_pattern.search(c) else c for c in environ.get("CHANNELS", "-1003370992067 -1003408919601 -1003760044053 -1002658908912").split()]
 # Channel IDs (comma-separated) where newly added movies are auto-posted.
-POST_CHANNELS = [as_int(c.strip()) for c in environ.get("POST_CHANNELS", "0").split(",") if c.strip()]
+POST_CHANNELS = [as_int(c.strip()) for c in environ.get("POST_CHANNELS", "-1004482646707").split(",") if c.strip()]
 # Force-subscribe channel(s). Users must join to use the bot. Space-separated, 0 = off.
 # Supports a SINGLE id (legacy) or MULTIPLE ids (new) — both work.
 AUTH_CHANNELS = [as_int(c) for c in environ.get("AUTH_CHANNEL", "0").split() if c.strip()]
 AUTH_CHANNEL = AUTH_CHANNELS[0] if AUTH_CHANNELS else 0   # legacy single-channel alias
 # Force-subscribe channel used by the request feature. 0 = disabled.
-AUTH_REQ_CHANNEL = as_int(environ.get("AUTH_REQ_CHANNEL", "0"))
+AUTH_REQ_CHANNEL = as_int(environ.get("AUTH_REQ_CHANNEL", " -1001681286512"))
 # Log a message when a search returns no result. True / False.
 NO_RESULTS_MSG = is_enabled(environ.get("NO_RESULTS_MSG", "True"), False)
 
 # ──────────────────────────── MONGODB ───────────────────────────────────────
 # 🔴 REQUIRED — MongoDB connection URI from https://www.mongodb.com (Atlas).
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aswanthshaji2009:aswanthshaji2009@cluster0.lgkz4ku.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get("DATABASE_NAME", "TrinityFilter")
 # Files collection name (use a unique name per bot).
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "Trinity_files")
@@ -203,7 +203,7 @@ CHNL_LNK = environ.get("CHNL_LNK", "")
 # Pop-up alert text shown when a user taps something not meant for them.
 MSG_ALRT = environ.get("MSG_ALRT", "Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?")
 # 🔴 REQUIRED — Log channel ID where the bot posts logs. Bot must be admin there.
-LOG_CHANNEL = as_int(environ.get("LOG_CHANNEL", "0"))
+LOG_CHANNEL = as_int(environ.get("LOG_CHANNEL", "-1004482646707"))
 # Channel where group-verification stats are posted. 0 = use log channel.
 GROUP_VERIFY_LOGS = as_int(environ.get("GROUP_VERIFY_LOGS", LOG_CHANNEL if LOG_CHANNEL else 0))
 # Channel where movie requests are sent. 0 = use log channel.
