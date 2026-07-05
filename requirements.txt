@@ -5,42 +5,33 @@
 #  Crafted by Trinity Mods (@trinityXmods) · github.com/Trinity-Mods/Auto-Filter-Bot
 # ═══════════════════════════════════════════════════════════════════════════════
 
-# ===========================
-# Telegram
-# ===========================
+# --- Telegram / core ---
 pyrofork==2.3.65
+tgcrypto
 pyromod==1.5
-tgcrypto==1.2.5
 
-# ===========================
-# Database
-# ===========================
-umongo==3.1.0
+# --- Database (PINNED for umongo compatibility) ---
+umongo
 pymongo[srv]==3.12.3
 motor==2.5.1
 marshmallow==3.14.1
-dnspython==2.7.0
+dnspython
 
-# ===========================
-# Web
-# ===========================
-aiohttp==3.9.5
-aiofiles==24.1.0
-jinja2==3.1.6
+# --- Web / streaming server ---
+aiohttp
+aiofiles
+jinja2
 
-# ===========================
-# Utilities
-# ===========================
-requests==2.32.3
-beautifulsoup4==4.12.3
-pytz==2025.2
-apscheduler==3.11.0
+# --- Utilities ---
+requests
+bs4
+pytz
+apscheduler
 shortzy==0.0.8
-pyshorteners==1.0.1
-telegraph==2.2.0
-rapidfuzz==3.13.0
+pyshorteners
+telegraph
+rapidfuzz
 
-# ===========================
-# IMDb
-# ===========================
-git+https://github.com/Joelkb/cinemagoer.git
+# --- IMDb / extras ---
+git+https://github.com/Joelkb/cinemagoer
+googletrans==4.0.0-rc1
