@@ -6,32 +6,43 @@
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # --- Telegram / core ---
-pyrofork==2.3.65
-tgcrypto
+# ===========================
+# Telegram
+# ===========================
+git+https://github.com/Mayuri-Chan/pyrofork.git
 pyromod==1.5
+tgcrypto==1.2.5
 
-# --- Database (PINNED for umongo compatibility) ---
-umongo
+# ===========================
+# Database
+# ===========================
+umongo==3.1.0
 pymongo[srv]==3.12.3
 motor==2.5.1
 marshmallow==3.14.1
-dnspython
+dnspython==2.7.0
 
-# --- Web / streaming server ---
-aiohttp
-aiofiles
-jinja2
+# ===========================
+# Web
+# ===========================
+aiohttp==3.9.5
+aiofiles==24.1.0
+jinja2==3.1.6
 
-# --- Utilities ---
-requests
-bs4
-pytz
-apscheduler
+# ===========================
+# Utilities
+# ===========================
+requests==2.32.3
+beautifulsoup4==4.12.3
+pytz==2025.2
+apscheduler==3.11.0
 shortzy==0.0.8
-pyshorteners
-telegraph
-rapidfuzz
+pyshorteners==1.0.1
+telegraph==2.2.0
+rapidfuzz==3.13.0
+googletrans==4.0.0rc1
 
-# --- IMDb / extras ---
-git+https://github.com/Joelkb/cinemagoer
-googletrans==4.0.0-rc1
+# ===========================
+# IMDb
+# ===========================
+git+https://github.com/Joelkb/cinemagoer.git
